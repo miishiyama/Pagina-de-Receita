@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --background-page: #EAEAEA;
+    --background-revenue: #FFFFFF;
+    --titles-color: #1B1B1B;
+    --footer-color: #8F8F8F;
+    --text-color: #39393A
+}
+
+body {
+    background: var(--background-page);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.header {
+    margin-top: 3rem;
+    width: 75rem;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.875rem;
+    background-color: var(--background-revenue);
+    border-radius: 0.625rem;
+    margin-bottom: -1rem;
+    z-index: 1
+}
+
+.header-h1 {
+    background-color: var(--background-revenue);
+    font-size: 1.75rem;
+    color: var(--titles-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1.25rem
+}
+
+.header-img {
+    width: 100%;
+    height: 15.625rem;
+    object-fit: cover;
+    border-radius: 0.625rem
+}
+
+.header-subtitle {
+    float: right
+}
+
+.header-subtitle,
+.footer-p {
+    font-size: 0.75rem;
+    color: var(--footer-color)
+}
+
+.main {
+    background-color: var(--background-revenue);
+    border-radius: 0.625rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 75rem
+}
+
+.preparation-mode-h2,
+.additional-information-h2 {
+    padding-top: 2rem
+}
+
+.ingredients-h2,
+.preparation-mode-h2,
+.additional-information-h2 {
+    font-size: 1.25rem;
+    color: var(--titles-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1rem
+}
+
+.ingredients-li,
+.preparation-mode-li,
+.additional-information-p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.625rem;
+    list-style-position: inside;
+    margin-bottom: 0.625rem
+}
+
+.ingredients-li:nth-last-child(1),
+.preparation-mode-li:nth-last-child(1),
+.additional-information-p:nth-child(1) {
+    margin-bottom: 0
+}
+
+.additional-information-p {
+    padding-bottom: 1.25rem
+}
+
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 1.625rem
+}
